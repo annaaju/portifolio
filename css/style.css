@@ -288,4 +288,11 @@ section{
         gap: 80px;
      }
 
+     
+     /*section 5*/
+
+     #section_5 img{
+        color: var(--white-color);
+     }
+
 
