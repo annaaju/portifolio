@@ -231,14 +231,21 @@ section{
         flex-wrap: nowrap;
     } 
 
-    .tec-images {
-        display: flexbox;
-        justify-content: center;
-        flex-direction: row;
+    #tec{
         align-items: center;
         text-align: center;
-        gap: 20px;
-        margin-top: 70px;
+        margin-top: 50px;
+    }
+
+    .tec-images {
+        display:grid;
+        justify-content: center;
+        grid-template-columns: 100px 100px 100px 100px;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        margin-top: 40px;
+        grid-row: auto;
      }
 
      #section_3 img:hover{
