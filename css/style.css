@@ -325,15 +325,23 @@ section{
      
      /*section 5*/
 
-     .devicon-github-original-wordmark{
-        display: grid;
-        font-size: 10vh;
+    i{
+        display: flex;
+        flex-direction: row;
+        font-size: 8vh;
         margin: 5%;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    
      }
 
-     .devicon-github-original-wordmark:hover{
-        transform: scale(1.10);
+     i:hover{
+        transform: scale(1.05);
         transition: 0.5s;
+        
      }
 
      #section_5{
@@ -345,16 +353,6 @@ section{
      #section_5 h2{
         font-size: 4vh;
         margin-bottom: 50px;
-     }
-
-     #section_5 img{
-        width: 10vh;
-        gap: 20px;
-     }
-
-     #section_5 img:hover{
-        transform: scale(1.10);
-        transition: 0.5s;
      }
 
      #section_5 h3{
