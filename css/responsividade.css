@@ -1,46 +1,93 @@
 @media only screen and (max-width: 768px) {
-  /* Ajuste da Hero no Celular */
+  /* 1. Ajustes Gerais de Seção */
+  section {
+    padding: 60px 5%; /* Menos padding no celular */
+    height: auto !important; /* Libera o 100vh se houver */
+    min-height: auto;
+  }
+
+  /* 2. Section 1 (Hero) */
   .content {
     flex-direction: column-reverse; /* Foto em cima, texto embaixo */
-    text-align: center;
     gap: 30px;
+    text-align: center;
   }
 
   #section_1 .text h1 {
     font-size: 1.2rem;
+    line-height: normal;
   }
 
   #section_1 .text h2 {
-    font-size: 2.5rem; /* Menor para caber na tela do celular */
-    line-height: 1.2;
+    font-size: 2.8rem; /* Ajustado para não quebrar o layout */
+    line-height: 1.1;
+  }
+
+  #section_1 .text p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 10px auto;
   }
 
   #section_1 .image img {
-    width: 250px; /* Foto menor no celular */
-    height: 250px;
-    margin-left: 0;
+    width: 200px; /* Foto menor no celular */
+    height: 200px;
+    margin: 0 auto;
   }
 
-  /* Ajuste do Sobre Mim no Celular */
+  #section_1 a {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  /* 3. Section 2 (Sobre Mim & Timeline) */
   .content2 {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Empilha o texto e a foto de baixo */
+    gap: 40px;
+  }
+
+  #section_2 .text h2 {
+    font-size: 2rem;
+    line-height: normal;
+    margin-bottom: 20px;
   }
 
   .timeline {
-    margin-left: 0;
-    padding-left: 20px;
-    text-align: left; /* Mantém o texto da timeline legível */
+    padding-left: 20px; /* Reduz recuo da linha do tempo */
+    margin-left: 10px;
   }
 
-  /* Ajuste das Tecnologias */
+  .timeline-dot {
+    left: -31px; /* Realinha a bolinha */
+  }
+
+  #section_2 .image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
   .tec-images {
-    grid-template-columns: repeat(3, 1fr); /* 3 ícones por linha em vez de 4 */
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* 3 por linha no celular */
+    gap: 15px;
   }
 
-  /* Ajuste do Contato */
+  /* 5. Contato */
+  #section_5 h2 {
+    font-size: 1.8rem;
+  }
+
   .social-links {
     gap: 20px;
+    flex-wrap: wrap; /* Caso os ícones sejam muitos, eles quebram linha */
+  }
+
+  .social-links i {
+    font-size: 2.5rem;
+  }
+
+  .email-text {
+    font-size: 1rem !important;
   }
 }
