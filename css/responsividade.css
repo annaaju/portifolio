@@ -1,98 +1,46 @@
 @media only screen and (max-width: 768px) {
-    header {
-        padding: 15px 4%;
-    }
+  /* Ajuste da Hero no Celular */
+  .content {
+    flex-direction: column-reverse; /* Foto em cima, texto embaixo */
+    text-align: center;
+    gap: 30px;
+  }
 
-    header a {
-        font-size: 16px;
-    }
+  #section_1 .text h1 {
+    font-size: 1.2rem;
+  }
 
-    nav ul li {
-        padding: 0 15px;
-    }
+  #section_1 .text h2 {
+    font-size: 2.5rem; /* Menor para caber na tela do celular */
+    line-height: 1.2;
+  }
 
-    #section_1 .text h1 {
-        font-size: 25px;
-        line-height: 50px;
-    }
+  #section_1 .image img {
+    width: 250px; /* Foto menor no celular */
+    height: 250px;
+    margin-left: 0;
+  }
 
-    #section_1 .text h2 {
-        font-size: 40px;
-        line-height: 40px;
-    }
+  /* Ajuste do Sobre Mim no Celular */
+  .content2 {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    #section_1 .image img {
-        width: 100%;
-        margin-left: 0;
-    }
+  .timeline {
+    margin-left: 0;
+    padding-left: 20px;
+    text-align: left; /* Mantém o texto da timeline legível */
+  }
 
-    #section_2 .text h2 {
-        font-size: 30px;
-        line-height: 60px;
-    }
+  /* Ajuste das Tecnologias */
+  .tec-images {
+    grid-template-columns: repeat(3, 1fr); /* 3 ícones por linha em vez de 4 */
+    gap: 10px;
+  }
 
-    #section_2 .image img {
-        height: auto;
-        max-width: 100%;
-        margin-top: 20px;
-    }
-
-    #section_2 p {
-        font-size: 16px;
-    }
-
-    #section_3 h2 {
-        font-size: 24px;
-    }
-
-    #section_3 li {
-        font-size: 16px;
-    }
-
-    #section_3 img {
-        width: 50px;
-    }
-
-    #section_4 h2 {
-        font-size: 24px;
-    }
-
-    #section_4 li {
-        padding: 20px;
-        font-size: 18px;
-    }
-
-    #section_4 p {
-        font-size: 14px;
-    }
-
-    #code {
-        height: auto;
-    }
-
-    .devicon-github-original-wordmark {
-        font-size: 60px;
-    }
-
-    #section_5 h2 {
-        font-size: 24px;
-        margin-bottom: 30px;
-    }
-
-    #section_5 img {
-        width: 40px;
-    }
-
-    #section_5 h3 {
-        margin-top: 20px;
-        font-size: 20px;
-    }
-
-    #section_5 p {
-        font-size: 18px;
-    }
-
-    footer {
-        font-size: 14px;
-    }
+  /* Ajuste do Contato */
+  .social-links {
+    gap: 20px;
+  }
 }
